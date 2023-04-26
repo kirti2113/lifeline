@@ -1,4 +1,4 @@
-//main.dart
+// main.dart
 
 import 'package:flutter/material.dart';
 import './home.dart';
@@ -13,7 +13,8 @@ home: HomePage(),
 }
 }
 
-//home.dart
+
+//home.dart:
 
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
@@ -26,29 +27,6 @@ DeveloperSeries(
 year: "2002",
 developers: 40000,
 barColor: charts.ColorUtil.fromDartColor(Colors.green),
-import 'package:flutter/material.dart';
-import './home.dart';
-void main() => runApp(MyApp());
-class MyApp extends StatelessWidget {
-const MyApp({super.key});
-Widget build(BuildContext context) {
-return MaterialApp(
-debugShowCheckedModeBanner: false,
-home: HomePage(),
-);
-}
-}
-IT DEPARTMENT SIES GST MAD&PWA LAB
-developer_series.dart:-
-import 'package:charts_flutter/flutter.dart' as charts;
-class DeveloperSeries{
-final String year;
-final int developers;
-final charts.Color barColor;
-DeveloperSeries(
-{required this.year, required this.developers, required this.barColor}
-);
-}
 ),
 DeveloperSeries(
 year: "2003",
@@ -83,7 +61,7 @@ data: data,
 }
 }
 
-//developer_series.dart
+//developer_series.dart:-
 
 import 'package:charts_flutter/flutter.dart' as charts;
 class DeveloperSeries{
@@ -95,7 +73,7 @@ DeveloperSeries(
 );
 }
 
-//developer_chart.dart
+//developer_chart.dart:-
 
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
@@ -116,3 +94,4 @@ colorFn: (DeveloperSeries series, _) => series.barColor)
 return charts.BarChart(series, animate: true);
 }
 }
+
